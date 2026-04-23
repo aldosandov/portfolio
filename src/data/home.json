@@ -1,29 +1,29 @@
 {
-  "name": "John Doe",
+  "name": "Aldo Sandoval",
   "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
+  "intro": "Cientifico de datos con experiencia en entornos tecnológicos, gubernamentales, sociales y empresas de bienes de consumo.",
+  "introHtml": "<span class='text-white font-bold'>Cientifico de datos</span> con experiencia en entornos tecnológicos, gubernamentales, sociales y empresas de bienes de consumo.",
+  "webpageTitle": "Aldo Sandoval",
   "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/aldosandov",
       "icon": "mdi:github"
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://mx.linkedin.com/in/aldosandov",
       "icon": "mdi:linkedin"
     },
     {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:contactaldosandov@gmail.com",
       "icon": "mdi:email"
     },
     {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "https://wa.me/522215774102",
       "icon": "mdi:whatsapp"
     }
   ]
