@@ -1,0 +1,18 @@
+[
+  {
+    "degree": "Lic. Economía y Finanzas",
+    "institution": "UNITEC",
+    "campus": null,
+    "period": "May 2025 – Actualidad",
+    "status": "En curso",
+    "icon": "mdi:book-education"
+  },
+  {
+    "degree": "Ing. Ciencia de Datos y Matemáticas",
+    "institution": "Tecnológico de Monterrey",
+    "campus": "Campus Estado de México",
+    "period": "Ago 2019 – Jun 2023",
+    "status": "Graduado",
+    "icon": "mdi:certificate"
+  }
+]

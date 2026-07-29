@@ -30,3 +30,5 @@ yarn-error.log*
 
 # jetbrains setting folder
 .idea/
+
+CLAUDE.md
