@@ -1,35 +1,54 @@
 {
   "categories": [
     {
-      "title": "Mobile Development",
+      "title": "Analítica",
       "skills": [
-        { "name": "Flutter", "level": 3, "icon": "skill-icons:flutter-dark" },
-        { "name": "Dart", "level": 3, "icon": "skill-icons:dart-dark" },
-        { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
+        { "name": "Python",   "level": 3, "icon": "skill-icons:python-dark" },
+        { "name": "SQL",      "level": 2, "icon": "vscode-icons:file-type-sql" },
+        { "name": "pandas",   "level": 3, "icon": "mdi:table-large" },
+        { "name": "NumPy",    "level": 3, "icon": "vscode-icons:file-type-numpy" },
+        { "name": "Plotly",   "level": 3, "icon": "mdi:chart-line" },
+        { "name": "Power BI", "level": 2, "icon": "mdi:chart-bar" }
       ]
     },
     {
-      "title": "Frontend",
+      "title": "Ingeniería de Datos",
       "skills": [
-        { "name": "Astro", "level": 2, "icon": "skill-icons:astro" },
-        { "name": "HTML", "level": 2, "icon": "skill-icons:html" },
-        { "name": "CSS", "level": 2, "icon": "skill-icons:css" },
-        { "name": "Tailwind CSS", "level": 1, "icon": "skill-icons:tailwindcss-dark" }
+        { "name": "BigQuery",  "level": 2, "icon": "mdi:database-search" },
+        { "name": "Snowflake", "level": 2, "icon": "mdi:snowflake" },
+        { "name": "DuckDB",    "level": 2, "icon": "mdi:duck" },
+        { "name": "Scrapy",    "level": 2, "icon": "mdi:spider-web" },
+        { "name": "Selenium",  "level": 2, "icon": "skill-icons:selenium" },
+        { "name": "Airflow",   "level": 1, "icon": "mdi:lightning-bolt" }
       ]
     },
     {
       "title": "Backend",
       "skills": [
         { "name": "FastAPI", "level": 2, "icon": "skill-icons:fastapi" },
-        { "name": "Python", "level": 2, "icon": "skill-icons:python-dark" },
-        { "name": "Firebase", "level": 3, "icon": "vscode-icons:file-type-firebase" }
+        { "name": "Flask",   "level": 2, "icon": "skill-icons:flask-dark" },
+        { "name": "Docker",  "level": 2, "icon": "skill-icons:docker" },
+        { "name": "Git",     "level": 2, "icon": "skill-icons:git" },
+        { "name": "Vercel",  "level": 2, "icon": "skill-icons:vercel-dark" },
+        { "name": "GCP",     "level": 1, "icon": "skill-icons:gcp-dark" }
       ]
     },
     {
-      "title": "Database",
+      "title": "Frontend",
       "skills": [
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
-        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" }
+        { "name": "Streamlit",   "level": 2, "icon": "mdi:chart-areaspline" },
+        { "name": "Astro",       "level": 1, "icon": "skill-icons:astro" },
+        { "name": "Vue",         "level": 1, "icon": "skill-icons:vuejs-dark" },
+        { "name": "JavaScript",  "level": 2, "icon": "skill-icons:javascript" }
+      ]
+    },
+    {
+      "title": "ML y Automatización",
+      "skills": [
+        { "name": "scikit-learn", "level": 3, "icon": "skill-icons:scikitlearn-dark" },
+        { "name": "spaCy",        "level": 2, "icon": "mdi:robot" },
+        { "name": "n8n",          "level": 2, "icon": "mdi:connection" },
+        { "name": "Claude Code",  "level": 2, "icon": "mdi:robot-happy" }
       ]
     }
   ]

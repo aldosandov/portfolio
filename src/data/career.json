@@ -1,26 +1,58 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
+    "company": "CIMA A.C.",
+    "role": "Presidente y Fundador",
+    "period": "May 2024 - Presente",
     "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
-    "skills": ["Leading", "Collaboration"]
+    "description": "Dirijo la estrategia de una asociación civil enfocada en educación, medio ambiente y economía social. Desarrollo sus productos digitales, desde los sitios web institucionales hasta sistemas automatizados de reservas y pagos.",
+    "skills": ["Liderazgo", "Automatización", "Desarrollo Web"]
   },
   {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
+    "company": "H. Ayuntamiento de Atzitzintla",
+    "role": "Contralor Municipal",
+    "period": "Oct 2024 - Mar 2026",
     "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
+    "description": "Responsable de la fiscalización y el control interno del ayuntamiento. Implementé el programa de control interno, coordiné la evaluación del desempeño por indicadores y automaticé procesos administrativos con n8n.",
+    "skills": ["Control Interno", "Indicadores", "Automatización"]
   },
   {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
-    "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "company": "NDS Cognitive Labs",
+    "role": "Watson Specialist",
+    "period": "Nov 2023 - May 2024",
+    "type": "Full time job",
+    "description": "Migré el chatbot de Banco Intercam a la plataforma IBM watsonx. Analicé el histórico conversacional para identificar intenciones y entidades, y validé la solución en entorno de staging.",
+    "skills": ["NLP", "Análisis de Datos", "IBM watsonx"]
+  },
+  {
+    "company": "Philip Morris México",
+    "role": "Data Analyst",
+    "period": "Jul 2023 - Nov 2023",
+    "type": "Full time job",
+    "description": "Centralicé en Snowflake los datos de campo de más de 40,000 puntos de venta y automaticé con Python los reportes que antes se armaban en Excel, reduciendo su generación de horas a minutos.",
+    "skills": ["Python", "Snowflake", "Power BI"]
+  },
+  {
+    "company": "Ombudsman Energía México A.C.",
+    "role": "Data Scientist",
+    "period": "Feb 2023 - Nov 2023",
+    "type": "Full time job",
+    "description": "Diseñé y orquesté el pipeline que alimenta el reporte mensual de mercados energéticos, con más de 40 indicadores nacionales e internacionales. El reporte se presentó ante la Cámara de Diputados.",
+    "skills": ["Apache Airflow", "BigQuery", "Data Studio"]
+  },
+  {
+    "company": "NDS Cognitive Labs",
+    "role": "Data Scientist",
+    "period": "Jun 2021 - Jul 2023",
+    "type": "Full time job",
+    "description": "Desarrollé modelos de NLP para una plataforma de reentrenamiento automático de chatbots de clientes de escala nacional. Desplegué los modelos como APIs en contenedores sobre GCP.",
+    "skills": ["NLP", "FastAPI", "Docker"]
+  },
+  {
+    "company": "World Boxing Council",
+    "role": "Data Scientist Intern",
+    "period": "Feb 2020 - Nov 2020",
+    "type": "Internship",
+    "description": "Construí mediante web scraping una base histórica de combates y peleadores, y entrené un modelo de clasificación para detectar combates desiguales. Expuse el modelo como API con Flask.",
+    "skills": ["Web Scraping", "Machine Learning", "Flask"]
   }
 ]
