@@ -1,0 +1,146 @@
+---
+import { Icon } from 'astro-icon/components';
+import hobbiesData from '../data/hobbies.json';
+
+const { title, subtitle, hobbies } = hobbiesData;
+---
+
+<section id="hobbies" class="section-container overflow-hidden">
+  <div class="container mx-auto">
+    <div class="mb-16 hobbies-header">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-2 flex items-center gap-4">
+        <span class="text-accent">/</span> {title}
+      </h2>
+      <p class="text-gray font-body text-sm max-w-md">
+        {subtitle}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+      {hobbies.map((hobby) => (
+        <div class="hobby-card group relative overflow-hidden bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/40 hover:bg-white/8 transition-all duration-500">
+          <div class="absolute -top-16 -right-16 w-40 h-40 bg-accent rounded-full blur-[70px] opacity-0 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none"></div>
+
+          <div class="hobby-icon relative w-12 h-12 mb-5 flex items-center justify-center rounded-xl bg-accent/10 border border-accent/20 text-accent transition-all duration-500 group-hover:bg-accent/20 group-hover:border-accent/50">
+            <Icon name={hobby.icon} class="w-6 h-6 transition-transform duration-500 group-hover:scale-110" />
+            <span class="hobby-pulse absolute inset-0 rounded-xl border border-accent/40"></span>
+          </div>
+
+          <h3 class="font-heading font-bold text-white text-lg mb-2">
+            {hobby.name}
+          </h3>
+
+          <p class="text-gray-400 text-sm font-body leading-relaxed">
+            {hobby.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Header Initial State */
+  .hobbies-header {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Cards Initial State */
+  .hobby-card {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition:
+      opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.5s ease,
+      background-color 0.5s ease;
+  }
+
+  /* Shared Revealed State */
+  .hobbies-header.reveal,
+  .hobby-card.reveal {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1);
+  }
+
+  .hobby-card.reveal:hover {
+    transform: translateY(-6px);
+  }
+
+  /* Icon halo, only animated once the card is visible */
+  .hobby-pulse {
+    opacity: 0;
+  }
+
+  .hobby-card.reveal .hobby-pulse {
+    animation: hobbyPulse 3s ease-out infinite;
+  }
+
+  @keyframes hobbyPulse {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    70%,
+    100% {
+      opacity: 0;
+      transform: scale(1.45);
+    }
+  }
+
+  .hobby-card:hover .hobby-icon {
+    transform: translateY(-3px) rotate(-6deg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hobbies-header,
+    .hobby-card {
+      transition: none;
+    }
+
+    .hobby-card.reveal .hobby-pulse {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const initHobbiesReveal = () => {
+    const header = document.querySelector('.hobbies-header');
+    const cards = document.querySelectorAll('.hobby-card');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const target = entry.target as HTMLElement;
+
+          if (target.classList.contains('hobbies-header')) {
+            target.classList.add('reveal');
+            observer.unobserve(target);
+          } else if (target.classList.contains('hobby-card')) {
+            const index = Array.from(cards).indexOf(target);
+
+            setTimeout(() => {
+              target.classList.add('reveal');
+            }, index * 150);
+
+            observer.unobserve(target);
+          }
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -10px 0px'
+    });
+
+    if (header) observer.observe(header);
+    cards.forEach(card => observer.observe(card));
+  };
+
+  window.addEventListener('load', initHobbiesReveal);
+
+  // Support for Astro View Transitions
+  document.addEventListener('astro:after-swap', initHobbiesReveal);
+</script>

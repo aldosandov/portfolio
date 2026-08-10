@@ -1,0 +1,26 @@
+{
+  "title": "Hobbies",
+  "subtitle": "Lo que hago cuando no estoy trabajando con datos.",
+  "hobbies": [
+    {
+      "name": "Montañismo",
+      "description": "Miembro del Subconsejo de Restauración del Parque Nacional Pico de Orizaba y patrocinador del Reto Vulcano, una de las carreras de trail running más exigentes de México.",
+      "icon": "mdi:terrain"
+    },
+    {
+      "name": "Trabajo social",
+      "description": "Fundador y presidente de CIMA A.C., asociación civil que impulsa proyectos comunitarios en educación, medio ambiente, cultura y economía social en Atzitzintla, Puebla.",
+      "icon": "mdi:hand-heart"
+    },
+    {
+      "name": "Desarrollo web",
+      "description": "Código recreativo fuera de proyectos profesionales: pruebo herramientas y frameworks nuevos sin las restricciones de un cliente o empleador.",
+      "icon": "mdi:code-braces"
+    },
+    {
+      "name": "Fotografía",
+      "description": "Practico composición y edición fotográfica como complemento creativo a mi trabajo con datos.",
+      "icon": "mdi:camera-iris"
+    }
+  ]
+}
