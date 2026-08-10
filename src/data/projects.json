@@ -1,5 +1,14 @@
 [
   {
+    "title": "Observatorio de Precios Agrícolas",
+    "description": "Traduce precios mayoristas del SNIIM en precios de referencia en parcela, dando a los productores poder de negociación frente a intermediarios.",
+    "images": ["observatorio-precios.webp"],
+    "tech": ["Python", "Scrapy", "BigQuery", "Streamlit", "GitHub Actions"],
+    "platforms": ["web"],
+    "link": "https://github.com/aldosandov/precios-agricolas-mx",
+    "category": "Análisis de Datos"
+  },
+  {
     "title": "Sitio web CIMA A.C.",
     "description": "Sitio web institucional de CIMA A.C. con información sobre sus programas y actividades, integración con Payload CMS.",
     "images": ["cima-website.webp"],
